@@ -50,7 +50,7 @@ public class BloodRoomClear extends Module {
 	public void onChatReceived(ClientChatReceivedEvent event) {
 		if (this.toggled) {
 			String message = event.message.getUnformattedText();
-			Logger log = new Logger();
+			Logger log = new Logger(Main.PREFIX, "[BLOOD_ROOM_CLEAR]");
 
 			if (Main.DebugMode) {
 				log.sendLog("Received message: " + message);

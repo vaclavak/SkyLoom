@@ -47,6 +47,9 @@ SkyQuill provides several in-game commands to help you manage features and monit
 
 - **`/sq chestcounter check`** - Shows the current powderchest counter
 - **`/sq chestcounter reset`** - Resets the powderchest counter
+- **`/sq commissioncounter check`** - Shows the current commission counter
+- **`/sq commissioncounter reset`** - Resets the commission counter
+- **`/sq counters`** - Shows the status of all counters
 - **`/sq help`** - Shows all available commands
 
 > **Note:** You can also use `/skyquill`, `/skyq`, or `/squill` as command aliases instead of `/sq`.

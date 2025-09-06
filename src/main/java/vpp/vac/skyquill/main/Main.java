@@ -20,7 +20,7 @@ public class Main {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		Logger log = new Logger();
+		Logger log = new Logger(PREFIX, "[MAIN_CLASS]");
 		if (DebugMode) {
 			log.sendLog(
 					"Debug Mode is enabled! If you did not enable it, please contact support and report the issue \n Debug mode may mess things up!");

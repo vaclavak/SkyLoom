@@ -55,7 +55,7 @@ public class BloodRoomOpen extends Module {
 	public void onChatReceived(ClientChatReceivedEvent event) {
 		if (this.toggled) {
 			String message = event.message.getUnformattedText();
-			Logger log = new Logger();
+			Logger log = new Logger(Main.PREFIX, "[BLOOD_ROOM_OPEN_ALERT]");
 
 			if (Main.DebugMode) {
 				log.sendLog("Received message: " + message);

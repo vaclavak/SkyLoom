@@ -54,7 +54,7 @@ public class BlackHoleReadyAlert extends Module {
 	public void onChatReceived(ClientChatReceivedEvent event) {
 		if (this.toggled) {
 			String message = event.message.getUnformattedText();
-			Logger log = new Logger();
+			Logger log = new Logger(Main.PREFIX, "BLACK_HOLE_READY_ALERT");
 
 			if (Main.DebugMode) {
 				log.sendLog("Received message: " + message);

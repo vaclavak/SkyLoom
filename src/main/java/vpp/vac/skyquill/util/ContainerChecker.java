@@ -13,11 +13,12 @@ import vpp.vac.skyquill.main.Main;
 public class ContainerChecker {
 	private static int debugCount = 0;
 
+	private static final Logger log = new Logger(Main.PREFIX, "[CONTAINER_CHECKER]");
 	public static boolean containsCrystalFragment() {
 		Minecraft mc = Minecraft.getMinecraft();
 		EntityPlayer player = mc.thePlayer;
 		Container container = player.openContainer;
-		final Logger log = new Logger();
+		
 
 		if (container == null) {
 			return false;
@@ -47,7 +48,6 @@ public class ContainerChecker {
 		Minecraft mc = Minecraft.getMinecraft();
 		EntityPlayer player = mc.thePlayer;
 		Container container = player.openContainer;
-		final Logger log = new Logger();
 
 		if (container == null) {
 			return false;

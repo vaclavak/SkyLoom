@@ -2,10 +2,17 @@ package vpp.vac.skyquill.util;
 
 public class Logger {
 	
-	public String loggerPrefix = "[Skyquill] [Logger]: ";
+	//public String loggerPrefix = "[Skyquill] [Logger]: ";
+	public String loggerPrefix;
+	public String loggerPart;
+	
+	public Logger(String prefix, String part) {
+		loggerPrefix = prefix;
+		loggerPart = part;
+	}
 	
 	public void sendLog(String x) {
-		System.out.println(loggerPrefix + x);
+		System.out.println(loggerPrefix + loggerPart + x);
 	}
 	
 	public void sendLog(int x) {

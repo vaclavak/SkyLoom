@@ -94,7 +94,7 @@ public class Skyquill implements ICommand {
 								}
 							}else {
 								if(args[0].equalsIgnoreCase("counters")) {
-									System.out.println(EnumChatFormatting.GREEN + "COUNTER STATUS: \n " + EnumChatFormatting.AQUA + "Powderchest counter: " + Chestcounter.count + EnumChatFormatting.DARK_PURPLE + "\nCommission counter: " + CommisionCounter.count);
+									sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "COUNTER STATUS: \n " + EnumChatFormatting.AQUA + "Powderchest counter: " + Chestcounter.count + EnumChatFormatting.DARK_PURPLE + "\nCommission counter: " + CommisionCounter.count));
 								}
 							}
 						}

@@ -14,7 +14,7 @@ import vpp.vac.skyquill.util.Logger;
 public class Main {
 	public static final String MODID = "skyquill";
 	public static final String VERSION = "preview-1.0.1";
-	public static boolean DebugMode = true;
+	public static boolean DebugMode;
 	public static final String PREFIX = "[SKYQUILL] ";
 	public static final String DEV_VERSION = "A14-preview";
 

@@ -11,6 +11,7 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import vpp.vac.skyquill.main.Main;
 import vpp.vac.skyquill.module.impl.mining.Chestcounter;
+import vpp.vac.skyquill.module.impl.mining.CommisionCounter;
 
 public class Skyquill implements ICommand {
 	public static String[] Argz;
@@ -57,6 +58,8 @@ public class Skyquill implements ICommand {
 						sender.addChatMessage(
 								new ChatComponentText(EnumChatFormatting.GREEN + Main.PREFIX + "Reset chest counter!"));
 						Chestcounter.count = 0;
+					}else {
+						sender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + Main.PREFIX + "/sq chestcounter check|reset"));
 					}
 				}
 			} else {
@@ -74,6 +77,22 @@ public class Skyquill implements ICommand {
 					}else {
 						if(args[0].equalsIgnoreCase("fullversion")) {
 							sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + Main.VERSION + "-" + Main.DEV_VERSION));
+						}else {
+							if(args[0].equalsIgnoreCase("commisioncounter")) {
+								if(args[1].equalsIgnoreCase("check")) {
+									sender.addChatMessage(new ChatComponentText(
+											EnumChatFormatting.GREEN + Main.PREFIX + "Current commision counter: " + CommisionCounter.count));
+								}else {
+									if(args[0].equalsIgnoreCase("reset")) {
+										CommisionCounter.count = 0;
+										sender.addChatMessage(new ChatComponentText(
+												EnumChatFormatting.GREEN + Main.PREFIX + "Reset commision counter!"));
+									}else {
+										sender.addChatMessage(new ChatComponentText(
+												EnumChatFormatting.RED + Main.PREFIX + "/sq commisioncounter check|reset" + Chestcounter.count));
+									}
+								}
+							}
 						}
 					}
 				}

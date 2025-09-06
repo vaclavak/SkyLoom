@@ -8,8 +8,9 @@ SkyQuill is a mod designed to provide additional features that other SkyBlock mo
 
 ## ✨ Features
 
-- **Dungeon Alerts:** Automatically gain alerts when the blood room is cleared, opened, and more.
-- **Mining:** Commission and powder chest counters.
+- **Dungeon Alerts:** Automatically gain alerts when the blood room is cleared
+- **Mining:** Powder chest counter.
+- **Scam prevention** Attempts to stop the overflux capacitor scam, with more scam prevention features coming in the future!
 - **More coming soon!** I am actively working on improving SkyQuill for the best experience possible!
 
 > _SkyQuill is made with care by SkyBlock players, for SkyBlock players!_

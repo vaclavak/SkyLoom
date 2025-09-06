@@ -36,7 +36,20 @@ SkyQuill is a mod designed to provide additional features that other SkyBlock mo
 
 - Open the SkyQuill settings in-game by pressing the default right shift key.
 - Browse features.
+- Use the commands listed below for additional functionality.
 - Enjoy improved gameplay and dominate Hypixel SkyBlock!
+
+---
+
+## 💻 Commands
+
+SkyQuill provides several in-game commands to help you manage features and monitor your progress:
+
+- **`/sq chestcounter check`** - Shows the current powderchest counter
+- **`/sq chestcounter reset`** - Resets the powderchest counter
+- **`/sq help`** - Shows all available commands
+
+> **Note:** You can also use `/skyquill`, `/skyq`, or `/squill` as command aliases instead of `/sq`.
 
 ---
 

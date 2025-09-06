@@ -18,7 +18,9 @@ public class Skyquill implements ICommand {
 	private static ArrayList<String> commands = new ArrayList<String>();
 
 	public Skyquill() {
-		commands.add("checkcounter");
+		commands.add("chestcounter");
+		commands.add("commissioncounter");
+		commands.add("counters");
 	}
 
 	@Override
@@ -78,7 +80,7 @@ public class Skyquill implements ICommand {
 						if(args[0].equalsIgnoreCase("fullversion")) {
 							sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + Main.VERSION + "-" + Main.DEV_VERSION));
 						}else {
-							if(args[0].equalsIgnoreCase("commisioncounter")) {
+							if(args[0].equalsIgnoreCase("commissioncounter")) {
 								if(args[1].equalsIgnoreCase("check")) {
 									sender.addChatMessage(new ChatComponentText(
 											EnumChatFormatting.GREEN + Main.PREFIX + "Current commision counter: " + CommisionCounter.count));
@@ -94,7 +96,7 @@ public class Skyquill implements ICommand {
 								}
 							}else {
 								if(args[0].equalsIgnoreCase("counters")) {
-									sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "COUNTER STATUS: \n " + EnumChatFormatting.AQUA + "Powderchest counter: " + Chestcounter.count + EnumChatFormatting.DARK_PURPLE + "\nCommission counter: " + CommisionCounter.count));
+									sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "COUNTER STATUS:\n" + EnumChatFormatting.AQUA + "Powderchest counter: " + Chestcounter.count + "\n" + EnumChatFormatting.DARK_PURPLE + "Commission counter: " + CommisionCounter.count));
 								}
 							}
 						}

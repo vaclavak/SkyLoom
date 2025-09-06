@@ -1,0 +1,15 @@
+[
+{
+  "modid": "skyquill",
+  "name": "Skyquill",
+  "description": "A mod made to enhance hypixel skyblock",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["vaclavak"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

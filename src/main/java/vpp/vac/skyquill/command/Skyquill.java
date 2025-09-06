@@ -83,7 +83,7 @@ public class Skyquill implements ICommand {
 									sender.addChatMessage(new ChatComponentText(
 											EnumChatFormatting.GREEN + Main.PREFIX + "Current commision counter: " + CommisionCounter.count));
 								}else {
-									if(args[0].equalsIgnoreCase("reset")) {
+									if(args[1].equalsIgnoreCase("reset")) {
 										CommisionCounter.count = 0;
 										sender.addChatMessage(new ChatComponentText(
 												EnumChatFormatting.GREEN + Main.PREFIX + "Reset commision counter!"));
@@ -91,6 +91,10 @@ public class Skyquill implements ICommand {
 										sender.addChatMessage(new ChatComponentText(
 												EnumChatFormatting.RED + Main.PREFIX + "/sq commisioncounter check|reset" + Chestcounter.count));
 									}
+								}
+							}else {
+								if(args[0].equalsIgnoreCase("counters")) {
+									System.out.println(EnumChatFormatting.GREEN + "COUNTER STATUS: \n " + EnumChatFormatting.AQUA + "Powderchest counter: " + Chestcounter.count + EnumChatFormatting.DARK_PURPLE + "\nCommission counter: " + CommisionCounter.count);
 								}
 							}
 						}

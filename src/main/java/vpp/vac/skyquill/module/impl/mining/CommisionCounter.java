@@ -43,7 +43,7 @@ public class CommisionCounter extends Module {
 
 			String[] lines = message.split("\n");
 			for (String line : lines) {
-				if (line.contains("Commission Complete!!")) {
+				if (line.contains("Commission Complete!")) {
 					count++;
 					if (Main.DebugMode) {
 						log.sendLog("Commision complete, new count is: " + count);

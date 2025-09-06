@@ -25,9 +25,8 @@ public class BloodRoomOpen extends Module {
 	private int X;
 	private int Y;
 	private ScaledResolution sr = new ScaledResolution(Minecraft.getMinecraft());
-	private String text = "BLOOD CLEAR";
+	private String text = "BLOOD OPEN";
 	private EntityPlayerSP player = Minecraft.getMinecraft().thePlayer;
-	private ArrayList<String> WatcherMessages = new ArrayList<>();
 	
 	
 	
@@ -36,7 +35,6 @@ public class BloodRoomOpen extends Module {
 		this.description = "Displays an alert on your screen when blood room gets opened";
 		this.moduleCategory = Category.DUNGEONS;
 		
-		WatcherMessages.add("");
 		
 	}
 	
@@ -65,8 +63,8 @@ public class BloodRoomOpen extends Module {
 
 			String[] lines = message.split("\n");
 			for (String line : lines) {
-				if (line.contains("You have proven yourself. You may pass.")) {
-					player.sendChatMessage("[SkyQuill] Blood Clear!");
+				if (line.toLowerCase().contains("blood door") && line.toLowerCase().contains("opened")) {
+					player.sendChatMessage("[SkyQuill] Blood Open!");
 					shouldRender = true;
 					if (Main.DebugMode) {
 						log.sendLog("Blood room open" + count);

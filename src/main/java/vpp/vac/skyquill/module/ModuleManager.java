@@ -3,6 +3,7 @@ package vpp.vac.skyquill.module;
 import java.util.ArrayList;
 
 import vpp.vac.skyquill.module.impl.dungeons.BloodRoomClear;
+import vpp.vac.skyquill.module.impl.dungeons.BloodRoomOpen;
 import vpp.vac.skyquill.module.impl.dungeons.FragRunLootDetector;
 import vpp.vac.skyquill.module.impl.mining.Chestcounter;
 import vpp.vac.skyquill.module.impl.misc.BlackHoleReadyAlert;
@@ -20,6 +21,7 @@ public class ModuleManager {
 		modules.add(new BloodRoomClear());
 		modules.add(new FragRunLootDetector());
 		modules.add(new BlackHoleReadyAlert());
+		modules.add(new BloodRoomOpen());
 	}
 
 }

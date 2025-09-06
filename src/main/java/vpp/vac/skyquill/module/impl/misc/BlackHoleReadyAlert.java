@@ -34,7 +34,7 @@ public class BlackHoleReadyAlert extends Module {
 	public BlackHoleReadyAlert() {
 		this.name = "Black Hole Ready Alert";
 		this.description = "Displays an alert on your screen when your black hole is ready to be deployed";
-		this.moduleCategory = Category.MISC;
+		this.moduleCategory = Category.HUNTING;
 	}
 	
 	@Override

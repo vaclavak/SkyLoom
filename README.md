@@ -1,6 +1,6 @@
 # SkyQuill
 
-![SkyQuill Banner](https://github.com/vaclavak/SkyQuill/tree/main/src/main/resources/assets/Logo.png)
+![SkyQuill Banner](https://raw.githubusercontent.com/vaclavak/SkyQuill/main/src/main/resources/assets/Logo.png)
 
 SkyQuill is a mod designed to provide additional features that other SkyBlock mods don't have and enhance your SkyBlock experience.
 

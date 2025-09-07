@@ -20,7 +20,6 @@ public class ModuleManager {
 		modules.add(new DeveloperMode());
 		modules.add(new AntiOverfluxScam());
 		modules.add(new BloodRoomClear());
-		modules.add(new FragRunLootDetector());
 		modules.add(new BlackHoleReadyAlert());
 		modules.add(new BloodRoomOpen());
 		modules.add(new CommisionCounter());

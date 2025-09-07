@@ -91,7 +91,7 @@ public class Skyquill implements ICommand {
 												EnumChatFormatting.GREEN + Main.PREFIX + "Reset commision counter!"));
 									}else {
 										sender.addChatMessage(new ChatComponentText(
-												EnumChatFormatting.RED + Main.PREFIX + "/sq commisioncounter check|reset" + Chestcounter.count));
+												EnumChatFormatting.RED + Main.PREFIX + "/sq commisioncounter check|reset"));
 									}
 								}
 							}else {

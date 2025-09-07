@@ -35,7 +35,7 @@ SkyQuill is a mod designed to provide additional features that other SkyBlock mo
 
 ## ⚙️ Usage
 
-- Open the SkyQuill settings in-game by pressing the default right shift key.
+- Open the SkyQuill settings in-game by pressing the default right shift key. You can change this key in the default minecraft binds menu.
 - Browse features.
 - Use the commands listed below for additional functionality.
 - Enjoy improved gameplay and dominate Hypixel SkyBlock!
